@@ -1,6 +1,6 @@
 # Project page by HTLM & CSS
 
-My first task in programming life, which is connected with ended the module “advanced HTML & CSS”, was to visualize page “Sit on chair”.
+My first task in programming life, which is connected with end the module “advanced HTML & CSS”, was to visualize page “Sit on chair”.
 
 Conception was to prepare one, main  page (without redirecting to subpage) using only HTML and CSS and not adapting it to smaller screen width.
 
