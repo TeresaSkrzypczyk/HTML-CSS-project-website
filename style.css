@@ -1,0 +1,427 @@
+body {
+    margin: 0 auto;
+    font-family: "Raleway", Verdana, sans-serif;
+    width: 1050px;
+}
+.container {
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*
+STYLIZACJA HEADERA
+ */
+
+header {
+    background-color: black;
+}
+.menu>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    padding-right: 40px;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+.mainMenu {
+    position: relative;
+}
+.moreMenu {
+    position: absolute;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: -30px;
+    display: none;
+}
+.moreMenu>li {
+    list-style: none;
+    padding-bottom: 10px;
+    text-transform: none;
+}
+.moreMenu>li:last-child {
+    padding-bottom: 0;
+}
+.moreMenu:before {
+    content: "";
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.mainMenu:hover .moreMenu {
+    display: block;
+}
+.name {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+.name>p>span {
+    color: #24baa0;
+}
+
+/*
+STLIZACJA SEKCJI I
+ */
+
+.one {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 18%, rgba(224,224,224,1) 76%, rgba(214,214,214,1) 95%, rgba(212,212,212,1) 99%, rgba(230,230,230,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(18%, rgba(255,255,255,1)), color-stop(76%, rgba(224,224,224,1)), color-stop(95%, rgba(214,214,214,1)), color-stop(99%, rgba(212,212,212,1)), color-stop(100%, rgba(230,230,230,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 18%, rgba(224,224,224,1) 76%, rgba(214,214,214,1) 95%, rgba(212,212,212,1) 99%, rgba(230,230,230,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,1) 18%, rgba(224,224,224,1) 76%, rgba(214,214,214,1) 95%, rgba(212,212,212,1) 99%, rgba(230,230,230,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,1) 18%, rgba(224,224,224,1) 76%, rgba(214,214,214,1) 95%, rgba(212,212,212,1) 99%, rgba(230,230,230,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 18%, rgba(224,224,224,1) 76%, rgba(214,214,214,1) 95%, rgba(212,212,212,1) 99%, rgba(230,230,230,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0 );
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.leftArrow {
+    font-size: 70px;
+    color: #24baa0;
+    padding-left: 50px;
+}
+.leftArrow:hover {
+    opacity: 0.5;
+}
+.rightArrow {
+    font-size: 70px;
+    color: #24baa0;
+    padding-right: 50px;
+}
+.rightArrow:hover {
+    opacity: 0.5;
+}
+.imageOfChair {
+    background-image: url("images/black_chair.png");
+    width: 500px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+}
+.text {
+    text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.text>h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.text>h1 span {
+    color: #24baa0;
+}
+.simpleGreen {
+    text-transform: uppercase;
+    color: white;
+    background-color: #24baa0;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    box-shadow: none;
+    border: none;
+}
+
+/*
+STYLIZACJA SEKCJI II
+ */
+
+.two {
+    display: flex;
+    margin: 10px 50px;
+}
+.clair {
+    background-image: url("./images/box1_img.jpg");
+    position: relative;
+}
+.margarita {
+    background-image: url("./images/box2_img.jpg");
+    position: relative;
+}
+.clair, .margarita, .finds {
+    background-size: contain;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 300px;
+}
+.opacityText {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 130px;
+    z-index: 2;
+}
+.clairText, .margaritaText {
+    border-bottom: 8px solid #24baa0;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    font-weight: 900;
+    z-index: 3;
+    margin-left: 10px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+.clairText:hover, .margaritaText:hover {
+    color: #24baa0;
+}
+.findsMore {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gainsboro;
+}
+.findsMore>div {
+    border-bottom: 8px solid #24baa0;
+    width: 150px;
+    margin-top: 10px;
+    font-weight: 900;
+}
+.findsMore>p {
+    color: #5b5a5a;
+}
+
+/*
+STYLIZACJA SEKCJI III
+ */
+
+.three {
+    background: rgb(239, 237, 244);
+    flex-direction: column;
+}
+.cennik {
+    border-bottom: 8px solid #24baa0;
+    width: 300px;
+    font-weight: 900;
+    margin: 50px;
+}
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+.basic, .advance, .standard {
+    width: 300px;
+    height: 470px;
+    border: 2px solid gainsboro;
+    box-sizing: border-box;
+    text-align: center;
+    background: ghostwhite;
+    color: #24baa0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: relative;
+    font-size: 18px;
+    padding-top: 20px;
+}
+.standard {
+    border: 2px solid #24baa0;
+    background: #24baa0;
+    color: white;
+}
+.circleBigGrey {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    border: 2px solid gainsboro;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.circleSmallGrey {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: gainsboro;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.circleBigGreen {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border-radius: 50%;
+    background: #24baa0;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.circleSmallGreen {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    z-index: 2;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+div.circleTextGrey {
+    border-radius: 50%;
+    border: 2px solid gainsboro;
+    color: darkgrey;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 75px;
+    left: 95px;
+    padding: 15px;
+}
+div.circleTextGreen {
+    border-radius: 50%;
+    border: 2px solid #24baa0;
+    background: white;
+    color: #24baa0;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    top: 75px;
+    left: 95px;
+    padding: 15px;
+}
+span.big {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+}
+span.big sup {
+    font-size: 14px;
+}
+span.small {
+    font-size: 14px;
+}
+.listBasic>ul, .listStandard>ul, .listAdvance>ul {
+    padding: 0;
+    position: absolute;
+    top: 200px;
+}
+.listBasic>ul>li, .listStandard>ul>li, .listAdvance>ul>li {
+    list-style: none;
+    color: darkgrey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 296px;
+    box-sizing: border-box;
+}
+.listBasic>ul>li:nth-child(2n + 1), .listAdvance>ul>li:nth-child(2n + 1) {
+    background: #DCDCDC;
+}
+.listBasic>ul>li:nth-child(2n + 2), .listStandard>ul>li:nth-child(2n + 2), .listAdvance>ul>li:nth-child(2n + 2) {
+    background: rgb(239, 237, 244);
+}
+.listStandard>ul>li:nth-child(2n + 1) {
+    background: white;
+}
+.listBasic:after, .listAdvance:after {
+    content: "dołącz";
+    text-transform: uppercase;
+    color: white;
+    background-color: #24baa0;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 14px;
+    box-shadow: none;
+    border: none;
+    position: absolute;
+    margin-top: 340px;
+    margin-left: -60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.8s;
+}
+.listBasic:active:after, .listAdvance:active:after {
+    opacity: 0;
+    transition: all 0.8s;
+}
+.listStandard:after{
+    content: "dołącz";
+    text-transform: uppercase;
+    color: #24baa0;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+    font-size: 14px;
+    box-shadow: none;
+    border: none;
+    position: absolute;
+    margin-top: 340px;
+    margin-left: -60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.8s
+}
+.listStandard:active:after {
+    opacity: 0;
+    transition: all 0.8s
+}
+
+/*
+STYLIZACJA FOOTERA
+ */
+footer {
+    margin: 50px;
+    color: #aeaeae;
+}
+.copyright {
+    font-size: 14px;
+    padding-top: 18px;
+}
+.copyrightEnd {
+    padding-top: 15px;
+}
+.socialALL {
+    display: flex;
+    flex-direction: row;
+    padding-left: 280px;
+}
+.social {
+    width: 40px;
+    height: 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.social:hover {
+    opacity: 0.5;
+}
+.media1 {
+    background-image: url("./images/flickr.png");
+}
+.media2 {
+    background-image: url("./images/vimeo.png");
+}
+.media3 {
+    background-image: url("./images/pinterest.png");
+}
+.media4 {
+    background-image: url("./images/twitter.png");
+}
