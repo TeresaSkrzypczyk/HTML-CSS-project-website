@@ -22,5 +22,4 @@ W sekcji ze zdjęciami foteli zostały stworzone trzy divy - dwa pierwsze zawier
 W sekcji z cennikiem zostało zastosowane również wykorzystanie position relative i absolute do rozmieszczenia elemtów. Dla zaprezetowania dostępnych opcji wyboru krzesła wykorzystano unordered list <ul>. Przyciki dotyczące wyboru opcji zostały przygotowane z wykorzystaniem pseudoelemetów :after i pseudoklasy :active do stworzenie efektu wciskanego guzika.
 
 W sekcji footer zostały umieszczone ikonki przekierowujące do stron social media. Jest ona zakończeniem przygotowanej strony.
-# My-first-project---project-website-sit-on-chiar
-# My-first-project---project-website-sit-on-chiar
+
